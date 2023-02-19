@@ -1,0 +1,10 @@
+.navbar__img {
+  width: 40px;
+}
+
+.navbar__text {
+  font-weight: 800;
+  text-shadow: 4px;
+  letter-spacing: 4px;
+  font-style: italic;
+}
