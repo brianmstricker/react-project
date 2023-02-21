@@ -2,15 +2,31 @@ import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, NavbarText 
 import React from 'react'
 import Logo from '../../assets/logo.png'
 import './Header.css'
+import styled from 'styled-components'
+
+const ImgLogo = styled.img`
+  width: 40px;
+`
+const HeaderH1 = styled.h1`
+  font-size: 2.75rem;
+  font-weight: 500;
+  `
+const PNav = styled.p`
+  font-size: 1rem;
+  position: absolute;
+  bottom: -12px;
+  right: 75%;
+  `
 
 const Header = () => {
   return (
     <div>
-       <Navbar color="white" sticky="top" expand="medium">
-                <NavbarBrand href="/" className="ms-2">
-                    <img className="navbar__img float-start" src={Logo} alt="Logo" />
+       <Navbar light sticky="top" expand="md">
+                <NavbarBrand href="/" className="ms-1">
+                    <ImgLogo className="float-start" src={Logo} alt="Logo" />
+                    <HeaderH1>Pizza Delicioso</HeaderH1>
                 </NavbarBrand>
-                
+                <PNav>Your Favorite Local Pizzeria</PNav>
        </Navbar>
     </div>
   )
