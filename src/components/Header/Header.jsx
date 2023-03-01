@@ -23,7 +23,7 @@ const Header = () => {
       <Collapse isOpen={isOpen} navbar>
         <NavCustom className="m-2" navbar>
           <NavItemcustom className="list-unstyled text-white">
-            <NavLinkCustom className="text-white" to="/menu">
+            <NavLinkCustom to="/menu">
               Menu
             </NavLinkCustom>
           </NavItemcustom>
@@ -58,8 +58,8 @@ const NavbarCustom = styled(Navbar)`
 `;
 const NavLinkCustom = styled(NavLink)`
   text-decoration: none;
-  &:hover,
-  &:active {
+  color: white;
+  &:hover {
     color: #ff0000 !important;
     text-decoration: underline;
     text-underline-offset: 0.75rem;
@@ -67,6 +67,10 @@ const NavLinkCustom = styled(NavLink)`
 `;
 const NavbarBrandcustom = styled(NavbarBrand)`
   color: white !important;
+  @media (max-width: 550px) {
+    display: flex;
+    
+  }
 `;
 const NavCustom = styled(Nav)`
   display: flex;
@@ -74,7 +78,7 @@ const NavCustom = styled(Nav)`
   align-items: center;
   justify-content: end;
   width: 100%;
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -88,7 +92,7 @@ const ImgLogo = styled.img`
   width: 50px;
   margin-right: 0.75rem;
   float: left;
-  @media (max-width: 600px) {
+  @media (max-width: 550px) {
     display: none;
   }
 `;
@@ -98,10 +102,10 @@ const HeaderH1 = styled.h1`
   letter-spacing: 4px;
   text-shadow: 1px 2px 1px #000000;
   @media (max-width: 1100px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  @media (max-width: 485px) {
-    font-size: 1.75rem;
+  @media (max-width: 550px) {
+    font-size: 9vw;
   }
 `;
 const NavItemcustom = styled(NavItem)`
