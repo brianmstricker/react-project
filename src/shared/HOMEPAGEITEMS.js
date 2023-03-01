@@ -1,6 +1,6 @@
-import burger from '../assets/burger.jpg';
-import pizza from '../assets/slice.jpg';
-import pasta from '../assets/pasta.jpg';
+import burger from '../assets/burger-small.jpg';
+import pizza from '../assets/pizza-small.jpg';
+import pasta from '../assets/pasta-small.jpg';
 
 export const PAGEITEMS = [
     {
@@ -17,7 +17,7 @@ export const PAGEITEMS = [
         image: pizza,
         description: 'Pizza is a savory dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (anchovies, olives, meat, etc.) baked at a high temperature, traditionally in a wood-fired oven.',
         featured: true,
-        price: '$5.99'
+        price: '$15.99'
     },
     {
         id: 2,
