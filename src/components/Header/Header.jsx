@@ -23,17 +23,18 @@ const Header = () => {
       <Collapse isOpen={isOpen} navbar>
         <NavCustom className="m-2" navbar>
           <NavItemcustom className="list-unstyled text-white">
-            <NavLinkCustom to="/menu">
-              Menu
-            </NavLinkCustom>
+            <NavLinkCustom to="/menu">Menu</NavLinkCustom>
           </NavItemcustom>
-          <NavItemcustom className="list-unstyled">Order</NavItemcustom>
+          <NavItemcustom className="list-unstyled">
+            <NavLinkCustom to="/order">Order</NavLinkCustom>
+          </NavItemcustom>
           <NavItemcustom className="list-unstyled">About</NavItemcustom>
           <NavItemcustom className="list-unstyled">Register</NavItemcustom>
           <NavItemcustom className="list-unstyled">Login</NavItemcustom>
           <NavItemcustom className="list-unstyled">
-            <ShoppingCartOutlinedIcon />
+         <NavLinkCustom to='/cart'>   <ShoppingCartOutlinedIcon style={{transform: 'scale(1.4)'}} /></NavLinkCustom>
           </NavItemcustom>
+          <CartNumDiv>1</CartNumDiv>
         </NavCustom>
       </Collapse>
     </NavbarCustom>
@@ -69,7 +70,6 @@ const NavbarBrandcustom = styled(NavbarBrand)`
   color: white !important;
   @media (max-width: 550px) {
     display: flex;
-    
   }
 `;
 const NavCustom = styled(Nav)`
@@ -82,9 +82,9 @@ const NavCustom = styled(Nav)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: 1.5rem;
     background-color: black;
-    padding: .5rem;
+    padding: 1rem;
     border-radius: 20px;
   }
 `;
@@ -120,6 +120,9 @@ const NavItemcustom = styled(NavItem)`
     text-underline-offset: 0.75rem;
     cursor: pointer;
   }
+  @media (max-width: 550px) {
+    font-size: 1.25rem;
+  }
 `;
 const ParaDiv = styled.div`
   font-size: 1.75vmin;
@@ -128,5 +131,17 @@ const ParaDiv = styled.div`
   bottom: 1%;
   left: 15%;
 `;
+
+const CartNumDiv = styled.div`
+  position: absolute;
+  right: 0.8%;
+  color: #ffffff;
+  background-color: #808080;
+  border-radius: 50%;
+  padding: 0.1rem;
+  font-size: 1.25rem;
+  width: 2rem;
+  transform: scale(.8);
+`
 
 export default Header;

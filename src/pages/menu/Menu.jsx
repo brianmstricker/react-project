@@ -16,7 +16,7 @@ const Menu = () => {
                 <H2Style>{item.name}</H2Style>
               </div>
               <DescP>{item.description}</DescP>
-              <PriceStyle>{item.price}</PriceStyle>
+              <PriceStyle>${item.price}</PriceStyle>
             </PDiv>
           </CardDiv>
         );

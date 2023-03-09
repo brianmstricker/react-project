@@ -68,7 +68,7 @@ const CardDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   @media (max-width: 1024px) {
     grid-gap: 0;

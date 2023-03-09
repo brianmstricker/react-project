@@ -17,6 +17,7 @@ const HomeDiv = styled.div`
   background-size: cover;
   background-position: center;
   height: 100vh;
+  max-width: 100%;
   background-color: #4a4747;
   background-blend-mode: darken;
 `;
