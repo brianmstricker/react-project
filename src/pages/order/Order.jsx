@@ -7,7 +7,7 @@ import { addItem } from "../../features/itemSlice";
 const Order = () => {
   const dispatch = useDispatch();
   const handleAddToCart = (item) => {
-    dispatch(addItem(item))
+    dispatch(addItem(item));
   };
   return (
     <>
@@ -17,11 +17,19 @@ const Order = () => {
         {PAGEITEMS.map((item) => {
           return (
             <CardDiv key={item.id}>
-              <StyledImg src={item.image} alt={item.description} width="300" height="250"></StyledImg>
+              <StyledImg
+                src={item.image}
+                alt={item.description}
+                width="300"
+                height="250"
+              ></StyledImg>
               <TextDiv>
                 <h3>{item.name}</h3>
                 <StyledP>${item.price}</StyledP>
-                <StyledButton onClick={() => handleAddToCart(item)} type="button">
+                <StyledButton
+                  onClick={() => handleAddToCart(item)}
+                  type="button"
+                >
                   Add to Cart
                 </StyledButton>
               </TextDiv>
@@ -35,7 +43,7 @@ const Order = () => {
 
 const BorderDiv = styled.div`
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   background-color: #000000;
 `;
 const ContentDiv = styled.div`

@@ -28,7 +28,7 @@ const Main = () => {
         </ImgDiv>
         <ImgDiv>
           <FoodImg src={pasta} alt="pasta"></FoodImg>
-          <h3>A delicious pasta!</h3>
+          <h3>Delicious pasta!</h3>
           <ImgP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, debitis exercitationem libero rerum,
             deserunt recusandae sed quisquam nam porro quia, excepturi maxime ullam aliquam veniam harum eveniet?
@@ -37,7 +37,7 @@ const Main = () => {
         </ImgDiv>
         <ImgDiv>
           <FoodImg src={whitepasta} alt="pasta"></FoodImg>
-          <h3>A tasty white pasta!</h3>
+          <h3>White pasta!</h3>
           <ImgP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, debitis exercitationem libero rerum,
             deserunt recusandae sed quisquam nam porro quia, excepturi maxime ullam aliquam veniam harum eveniet?

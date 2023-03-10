@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,10 @@ const Header = () => {
           <NavItemcustom className="list-unstyled">Register</NavItemcustom>
           <NavItemcustom className="list-unstyled">Login</NavItemcustom>
           <NavItemcustom className="list-unstyled">
-         <NavLinkCustom to='/cart'>   <ShoppingCartOutlinedIcon style={{transform: 'scale(1.4)'}} /></NavLinkCustom>
+            <NavLinkCustom to="/cart">
+              {" "}
+              <ShoppingCartOutlinedIcon style={{ transform: "scale(1.4)" }} />
+            </NavLinkCustom>
           </NavItemcustom>
           <CartNumDiv>1</CartNumDiv>
         </NavCustom>
@@ -87,6 +91,9 @@ const NavCustom = styled(Nav)`
     padding: 1rem;
     border-radius: 20px;
   }
+  @media (max-width: 1000px) {
+    padding: 0px 12px;
+  }
 `;
 const ImgLogo = styled.img`
   width: 50px;
@@ -122,6 +129,7 @@ const NavItemcustom = styled(NavItem)`
   }
   @media (max-width: 550px) {
     font-size: 1.25rem;
+    margin: 0.25rem;
   }
 `;
 const ParaDiv = styled.div`
@@ -141,7 +149,13 @@ const CartNumDiv = styled.div`
   padding: 0.1rem;
   font-size: 1.25rem;
   width: 2rem;
-  transform: scale(.8);
-`
+  transform: scale(0.8);
+  @media (max-width: 1000px) {
+    right: 0;
+  }
+  @media (max-width: 550px) {
+    display: none;
+  }
+`;
 
 export default Header;

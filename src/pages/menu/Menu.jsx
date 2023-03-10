@@ -28,7 +28,7 @@ const Menu = () => {
 
 const BorderDiv = styled.div`
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   background-color: #000000;
 `;
 const MenuH1 = styled.h1`
