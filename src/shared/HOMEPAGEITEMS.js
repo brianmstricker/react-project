@@ -1,6 +1,8 @@
 import burger from '../assets/burger-small.jpg';
 import pizza from '../assets/pizza-small.jpg';
 import pasta from '../assets/pasta-small.jpg';
+import cheesesteak from '../assets/cheesesteak.jpg';
+import coke from '../assets/coke.jpg';
 
 export const PAGEITEMS = [
     {
@@ -26,5 +28,21 @@ export const PAGEITEMS = [
         description: 'Pasta is a staple food of traditional Italian cuisine, with the first reference dating to 1154 in Sicily. It is also commonly used to refer to the variety of pasta dishes.',
         featured: true,
         price: 12.99
+    },
+    {
+        id: 3,
+        name: 'Cheese Steak',
+        image: cheesesteak,
+        description: 'Cheesesteak, also known as a Philly cheesesteak and by the portmanteau cheesesteak sandwich, is a sandwich made from thinly sliced pieces of beefsteak and melted cheese in a long hoagie roll.',
+        featured: false,
+        price: 10.99
+    },
+    {
+        id: 4,
+        name: 'Coke',
+        image: coke,
+        description: 'Coca-Cola is a carbonated soft drink manufactured by The Coca-Cola Company.',
+        featured: false,
+        price: 4.99
     }
 ];

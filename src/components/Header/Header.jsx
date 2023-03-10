@@ -38,7 +38,7 @@ const Header = () => {
               <ShoppingCartOutlinedIcon style={{ transform: "scale(1.4)" }} />
             </NavLinkCustom>
           </NavItemcustom>
-          <CartNumDiv>1</CartNumDiv>
+          {/* <CartNumDiv>1</CartNumDiv> */}
         </NavCustom>
       </Collapse>
     </NavbarCustom>
@@ -140,22 +140,22 @@ const ParaDiv = styled.div`
   left: 15%;
 `;
 
-const CartNumDiv = styled.div`
-  position: absolute;
-  right: 0.8%;
-  color: #ffffff;
-  background-color: #808080;
-  border-radius: 50%;
-  padding: 0.1rem;
-  font-size: 1.25rem;
-  width: 2rem;
-  transform: scale(0.8);
-  @media (max-width: 1000px) {
-    right: 0;
-  }
-  @media (max-width: 550px) {
-    display: none;
-  }
-`;
+// const CartNumDiv = styled.div`
+//   position: absolute;
+//   right: 0.8%;
+//   color: #ffffff;
+//   background-color: #808080;
+//   border-radius: 50%;
+//   padding: 0.1rem;
+//   font-size: 1.25rem;
+//   width: 2rem;
+//   transform: scale(0.8);
+//   @media (max-width: 1000px) {
+//     right: 0;
+//   }
+//   @media (max-width: 550px) {
+//     display: none;
+//   }
+// `;
 
 export default Header;

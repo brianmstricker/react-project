@@ -44,8 +44,10 @@ const CardDiv = styled.div`
   width: 100%;
 `;
 const ImgStyle = styled.img`
+  max-width: 100%;
   border-radius: 40px;
-  width: 30%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   @media (max-width: 650px) {
     display: none;

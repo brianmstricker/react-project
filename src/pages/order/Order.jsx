@@ -26,10 +26,7 @@ const Order = () => {
               <TextDiv>
                 <h3>{item.name}</h3>
                 <StyledP>${item.price}</StyledP>
-                <StyledButton
-                  onClick={() => handleAddToCart(item)}
-                  type="button"
-                >
+                <StyledButton onClick={() => handleAddToCart(item)} type="button">
                   Add to Cart
                 </StyledButton>
               </TextDiv>
@@ -64,6 +61,7 @@ const TextDiv = styled.div`
   border-radius: 2rem;
   padding: 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 const StyledButton = styled.button`
   padding: 0.5rem;

@@ -25,7 +25,7 @@ const Cart = () => {
                   <NameDiv>
                     <StyledImg
                       width={200}
-                      height={200}
+                      height={150}
                       src={item.image}
                       alt={item.description}
                     ></StyledImg>
@@ -110,7 +110,7 @@ const StyledImg = styled.img`
   max-width: 100%;
   object-fit: cover;
   border-radius: 10%;
-  @media (max-width: 1400px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `;
@@ -134,10 +134,10 @@ const StyledPrice = styled.h4`
 const NameDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
+  column-gap: 0.5rem;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1400px) {
+  @media (max-width: 1300px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -157,7 +157,7 @@ const WrapperDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-    margin-top: 2rem;
+  margin-top: 2rem;
 `;
 const ParentDiv = styled.div`
   padding: 0 clamp(1rem, 6vw, 8rem);
@@ -171,6 +171,7 @@ const StyledButton = styled.button`
   border-radius: 5px;
   background-color: #5e5d5d;
   margin-top: 10px;
-    color: white;
+  color: white;
+  cursor: pointer;
 `;
 export default Cart;
