@@ -24,16 +24,41 @@ const Header = () => {
       <Collapse isOpen={isOpen} navbar>
         <NavCustom className="m-2" navbar>
           <NavItemcustom className="list-unstyled text-white">
-            <NavLinkCustom to="/menu">Menu</NavLinkCustom>
+            <NavLinkCustom
+              to="/menu"
+              onClick={() =>
+                setTimeout(() => {
+                  setIsOpen(false);
+                }, 250)
+              }
+            >
+              Menu
+            </NavLinkCustom>
           </NavItemcustom>
           <NavItemcustom className="list-unstyled">
-            <NavLinkCustom to="/order">Order</NavLinkCustom>
+            <NavLinkCustom
+              to="/order"
+              onClick={() =>
+                setTimeout(() => {
+                  setIsOpen(false);
+                }, 250)
+              }
+            >
+              Order
+            </NavLinkCustom>
           </NavItemcustom>
           <NavItemcustom className="list-unstyled">About</NavItemcustom>
           <NavItemcustom className="list-unstyled">Register</NavItemcustom>
           <NavItemcustom className="list-unstyled">Login</NavItemcustom>
           <NavItemcustom className="list-unstyled">
-            <NavLinkCustom to="/cart">
+            <NavLinkCustom
+              to="/cart"
+              onClick={() =>
+                setTimeout(() => {
+                  setIsOpen(false);
+                }, 250)
+              }
+            >
               {" "}
               <ShoppingCartOutlinedIcon style={{ transform: "scale(1.4)" }} />
             </NavLinkCustom>
@@ -99,7 +124,7 @@ const ImgLogo = styled.img`
   width: 50px;
   margin-right: 0.75rem;
   float: left;
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
     display: none;
   }
 `;
@@ -111,7 +136,7 @@ const HeaderH1 = styled.h1`
   @media (max-width: 1100px) {
     font-size: 3rem;
   }
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
     font-size: 9vw;
   }
 `;

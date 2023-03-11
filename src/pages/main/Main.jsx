@@ -20,7 +20,7 @@ const Main = () => {
       </CenterDiv>
       <CardDiv>
         <ImgDiv>
-          <FoodBurger src={burger} alt="burger"></FoodBurger>
+          <FoodImg src={burger} alt="burger"></FoodImg>
           <h3>A tasty burger!</h3>
           <ImgP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, debitis exercitationem
@@ -66,7 +66,7 @@ const MainDiv = styled.div`
 `;
 const CardDiv = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
@@ -84,21 +84,21 @@ const ImgDiv = styled.div`
   align-items: center;
 `;
 const FoodImg = styled.img`
-  width: 325px;
+  max-width: 100%;
+  width: 315px;
   height: 480px;
   object-fit: cover;
+  border-radius: 2rem;
 `;
 const ImgP = styled.p`
   width: 300px;
 `;
-const FoodBurger = styled.img`
-  width: 325px;
-  height: 480px;
-  object-fit: cover;
-`;
 const StyledP = styled.p`
   font-size: 1.25rem;
   color: white;
+  @media (max-width: 550px) {
+    font-size: 1rem;
+  }
 `;
 const StyledH4 = styled.h4`
   color: white;
@@ -116,6 +116,10 @@ const CenterDiv = styled.div`
   background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem;
   border-radius: 1rem;
+  @media (max-width: 550px) {
+    top: 70%;
+    width: 200px;
+  }
 `;
 
 export default Main;
